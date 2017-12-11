@@ -1,0 +1,71 @@
+/*
+style.css
+satvocab
+
+Created by Mark Villa on 01/20/11.
+Copyright © 2011 satvocab. All rights reserved.
+*/
+
+/* reset everything */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}
+ins{text-decoration:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+
+/* typography */
+body{font:13px/1.5 Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif}
+a:focus{outline:1px dotted invert}
+hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}
+h1{font-size:25px}h2{font-size:23px}h3{font-size:21px}h4{font-size:19px}h5{font-size:17px}h6{font-size:15px}
+li{margin-left:30px}
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin:10px 0;}
+
+/* top layout */
+.header {width:85%; margin: 0 auto;}
+.header h1 {text-decoration:none; color:#607d8b;}
+.container {width:85%; margin:5px auto; border-radius: 25px; background:#607d8b; color:#fff; padding:40px 10px;}
+
+/* login and search layout */
+body.mini .header {width:30%; text-align:center;}
+body.mini .container {width:30%;}
+body.mini .navigation-bar {width:30%;}
+
+/* navigation bar tabs */
+.navigation-bar {margin: 0 auto 2px; border-radius: 25px; padding:10px; width:85%; background:#607d8b;}
+.navigation-bar a {padding:12px 10px; margin:0; color:#fff; text-decoration: none; text-align: center;}
+.navigation-bar a:hover{background: lightgrey;}
+.navigation-bar span.right {float:right;}
+
+/* login form */
+form input.text {width:95%; font-size:16px;}
+form textarea {width:95%; height:100%;}
+
+/* vocabulary table layout */
+.vocabulary-table {table-layout: fixed; width: 100%; border-radius: 25px; border: 1px solid lightgrey;}
+.vocabulary-table th, .vocabulary-table td {word-wrap: break-word; white-space: wrap;}
+.vocabulary-table thead tr {color: white; background: #617e8c;}
+.vocabulary-table th {border: 2px solid grey; padding: 10px 10px; font-weight: normal;}
+.vocabulary-table tbody tr {color:#607d8b; background: white;}
+.vocabulary-table td {border: 1px solid lightgrey; padding:0px 6px;}
+.vocabulary-table tbody tr:hover {color: white; background: lightgrey;}
+
+/* vocabulary table column widths */
+.column-word {width: 100px;}
+.column-recollection {width: 55px;}
+.column-importance {width: 67px;}
+.column-recollection-input {width: 55px;}
+.column-word, .column-definition, .column-recollection, .column-importance, .column-recollection-input {text-align: left;}
+
+/* difficulty input field in vocabulary table */
+.vocabulary-table input {width: 25px;}
+.vocabulary-table input.text {font-size: 16px;}
+
+/* error messages */
+#message {margin: 5px 10px; padding: 4px; display:block;text-align:center;}
+#message.error {background:#FFEBE8;border: 1px solid #CC0000;color:#CC0000;}
+#message.success {border:solid 1px #349534; background:#C9FFCA;color:#008000;}
